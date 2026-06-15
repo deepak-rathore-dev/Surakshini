@@ -1,0 +1,17 @@
+**/build/
+build/
+.gradle/
+/build
+/captures
+.externalNativeBuild/
+.cxx/
+
+.idea/
+*.iml
+local.properties
+/local.properties
+.DS_Store
+
+*.jks
+*.keystore
+google-services.json

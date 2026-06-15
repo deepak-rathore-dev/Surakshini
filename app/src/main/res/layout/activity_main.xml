@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Surakshini"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Mandatory Aadhaar verification for your safety. Enter your mobile number to begin."
+        android:textAlignment="center"
+        android:textColor="#B3B3B3"
+        android:textSize="14sp"
+        android:lineSpacingExtra="4dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MOBILE NUMBER"
+            android:textColor="#757575"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="center_vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="🇮🇳 +91"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="#333333" />
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="10-digit number"
+                android:inputType="phone"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#555555" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSendOtp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#BB86FC"
+            android:text="Send OTP"
+            android:textColor="#121212"
+            android:textStyle="bold"
+            app:cornerRadius="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <EditText android:id="@+id/otp1" android:layout_width="45dp" android:layout_height="55dp" android:background="@drawable/otp_box" android:layout_margin="4dp" android:gravity="center" android:inputType="number" android:maxLength="1" />
+            <EditText android:id="@+id/otp2" android:layout_width="45dp" android:layout_height="55dp" android:background="@drawable/otp_box" android:layout_margin="4dp" android:gravity="center" android:inputType="number" android:maxLength="1" />
+            <EditText android:id="@+id/otp3" android:layout_width="45dp" android:layout_height="55dp" android:background="@drawable/otp_box" android:layout_margin="4dp" android:gravity="center" android:inputType="number" android:maxLength="1" />
+            <EditText android:id="@+id/otp4" android:layout_width="45dp" android:layout_height="55dp" android:background="@drawable/otp_box" android:layout_margin="4dp" android:gravity="center" android:inputType="number" android:maxLength="1" />
+            <EditText android:id="@+id/otp5" android:layout_width="45dp" android:layout_height="55dp" android:background="@drawable/otp_box" android:layout_margin="4dp" android:gravity="center" android:inputType="number" android:maxLength="1" />
+            <EditText android:id="@+id/otp6" android:layout_width="45dp" android:layout_height="55dp" android:background="@drawable/otp_box" android:layout_margin="4dp" android:gravity="center" android:inputType="number" android:maxLength="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnVerifyOtp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#BB86FC"
+            android:text="Verify"
+            android:textColor="#121212"
+            android:textStyle="bold"
+            app:cornerRadius="16dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/badge_bg"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_check_circle"
+            app:tint="#10B981" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="VERIFIED BY UIDAI AADHAAR"
+            android:textColor="#B3B3B3"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Your number is used only for identity verification and to ensure a safe environment for all women on Surakshini."
+        android:textAlignment="center"
+        android:textColor="#555555"
+        android:textSize="12sp" />
+
+</LinearLayout>

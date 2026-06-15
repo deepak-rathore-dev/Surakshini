@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A"
+    android:id="@+id/main"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:src="@android:drawable/ic_menu_revert"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Settings"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="40dp">
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    app:cardCornerRadius="27dp"
+                    app:cardBackgroundColor="#2C2C2C"
+                    app:cardElevation="0dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="12dp"
+                        android:src="@android:drawable/ic_menu_myplaces"
+                        app:tint="#BB86FC" />
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Surakshini"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCOUNT"
+            android:textColor="#4F46E5"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/settings_card_bg"
+            android:paddingVertical="8dp"
+            android:layout_marginBottom="32dp">
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp">
+                <ImageView android:id="@+id/icPhone" android:layout_width="36dp" android:layout_height="36dp" android:src="@android:drawable/ic_menu_call" app:tint="#BB86FC" android:background="@drawable/icon_bg_purple" android:padding="8dp"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_toEndOf="@id/icPhone" android:layout_marginStart="16dp" android:layout_centerVertical="true">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phone Number" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="14sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+91 98765 43210" android:textColor="#888888" android:textSize="12sp"/>
+                </LinearLayout>
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_chevron_right" app:tint="#555555" android:layout_alignParentEnd="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#222222" android:layout_marginHorizontal="16dp"/>
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp">
+                <ImageView android:id="@+id/icAadhaar" android:layout_width="36dp" android:layout_height="36dp" android:src="@android:drawable/ic_secure" app:tint="#10B981" android:background="@drawable/icon_bg_green" android:padding="8dp"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_toEndOf="@id/icAadhaar" android:layout_marginStart="16dp" android:layout_centerVertical="true">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aadhaar Status" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="14sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VERIFIED" android:textColor="#10B981" android:textSize="10sp" android:textStyle="bold" android:background="#1A10B981" android:paddingHorizontal="6dp" android:paddingVertical="2dp" android:layout_marginTop="4dp"/>
+                </LinearLayout>
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_check_circle" app:tint="#10B981" android:layout_alignParentEnd="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAFETY SETTINGS"
+            android:textColor="#4F46E5"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/settings_card_bg"
+            android:paddingVertical="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp">
+                <ImageView android:id="@+id/icSos" android:layout_width="36dp" android:layout_height="36dp" android:src="@android:drawable/ic_dialog_alert" app:tint="#F59E0B" android:background="@drawable/icon_bg_orange" android:padding="8dp"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_toEndOf="@id/icSos" android:layout_marginStart="16dp" android:layout_centerVertical="true" android:layout_marginEnd="60dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Auto-Trigger SOS" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="14sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Contact authorities automatically" android:textColor="#888888" android:textSize="12sp"/>
+                </LinearLayout>
+                <Switch android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:checked="true" android:thumbTint="#BB86FC" android:trackTint="#4DBB86FC"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/settings_card_bg"
+            android:paddingVertical="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp">
+                <ImageView android:id="@+id/icAudioAi" android:layout_width="36dp" android:layout_height="36dp" android:src="@android:drawable/ic_btn_speak_now" app:tint="#EF5350" android:background="@drawable/icon_bg_orange" android:padding="8dp"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_toEndOf="@id/icAudioAi" android:layout_marginStart="16dp" android:layout_centerVertical="true" android:layout_marginEnd="60dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Audio SOS AI" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="14sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Detects 'Help' or screams" android:textColor="#888888" android:textSize="12sp"/>
+                </LinearLayout>
+                <Switch
+                    android:id="@+id/switchAudioAI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:checked="false"
+                    android:thumbTint="#BB86FC"
+                    android:trackTint="#4DBB86FC"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/settings_card_bg"
+            android:paddingVertical="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/icLoc"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@android:drawable/ic_dialog_map"
+                    app:tint="#BB86FC"
+                    android:background="@drawable/icon_bg_purple"
+                    android:padding="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/icLoc"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="80dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Safe Locations"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Manage AI monitored zones"
+                        android:textColor="#888888"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnManageLocations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="ADD"
+                    android:textColor="#0A0A0A"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#BB86FC"
+                    app:cornerRadius="8dp"
+                    android:minHeight="36dp"
+                    android:minWidth="60dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/settings_card_bg"
+            android:paddingVertical="8dp"
+            android:layout_marginBottom="32dp">
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp">
+                <ImageView android:id="@+id/icContacts" android:layout_width="36dp" android:layout_height="36dp" android:src="@android:drawable/ic_menu_my_calendar" app:tint="#4CAF50" android:background="@drawable/icon_bg_green" android:padding="8dp"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_toEndOf="@id/icContacts" android:layout_marginStart="16dp" android:layout_centerVertical="true" android:layout_marginEnd="80dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trusted Contacts" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="14sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Manage SOS recipients" android:textColor="#888888" android:textSize="12sp"/>
+                </LinearLayout>
+                <Button android:id="@+id/btnManageContacts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:text="MANAGE" android:textColor="#0A0A0A" android:textSize="12sp" android:textStyle="bold" android:backgroundTint="#4CAF50" app:cornerRadius="8dp" android:minHeight="36dp" android:minWidth="60dp" android:insetTop="0dp" android:insetBottom="0dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRIVACY"
+            android:textColor="#4F46E5"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/settings_card_bg"
+            android:paddingVertical="8dp"
+            android:layout_marginBottom="40dp">
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp">
+                <ImageView android:id="@+id/icPrivacy" android:layout_width="36dp" android:layout_height="36dp" android:src="@android:drawable/ic_lock_lock" app:tint="#4F46E5" android:background="@drawable/icon_bg_blue" android:padding="8dp"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_toEndOf="@id/icPrivacy" android:layout_marginStart="16dp" android:layout_centerVertical="true">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data Processing" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="14sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="How we keep your records safe" android:textColor="#888888" android:textSize="12sp"/>
+                </LinearLayout>
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_chevron_right" app:tint="#555555" android:layout_alignParentEnd="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#1AEF5350"
+            android:text="Sign Out"
+            android:textColor="#EF5350"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SURAKSHINI V1.0.0"
+            android:textAlignment="center"
+            android:textColor="#555555"
+            android:textSize="10sp"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
